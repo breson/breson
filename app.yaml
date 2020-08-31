@@ -1,0 +1,14 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  script: auto
+- url: /.*
+  script: auto
+  login: required
+
+env_variables:
+  LANG_TAG: 'ja'
+  TIMESTAMP_TZ: 'Asia/Tokyo'
